@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html>
+{% load static %}
+
+<head>
+    <meta charset="utf-8">
+    <title>求打赏</title>
+    <script>
+        document.createElement("myHero")
+    </script>
+    <link rel="stylesheet" type="text/css" href="{% static 'css/login.css' %}">
+    <style>
+        myHero {
+        display: block;
+        background-color: #ddd;
+        padding: 50px;
+        font-size: 30px;
+    }
+    </style>
+</head>
+
+<body>
+    <header>
+        <div>
+            <myHero style="margin-bottom:0;">
+                <span style="font-size:20px">
+                    我
+                </span>
+                <span style="font-size:25px">
+                    们
+                </span>
+                <span style="font-size:30px">
+                    需
+                </span>
+                <span style="font-size:35px">
+                    要
+                </span>
+                <span style="font-size:40px">
+                    前
+                </span>
+                <span style="font-size:45px">
+                    端 \r\n
+                </span>
+            </myHero>
+        </div>
+        <header>
+            <div class="c-box fff-box">
+                <div class="wp header-box">
+                    <p class="fl hd-tips">
+                        <h1 style="center">
+                            求打赏！
+                        </h1>
+                    </p>
+                    <ul class="fr hd-bar">
+                        {% if username %}
+                        <li>欢迎您的登录,亲爱的{{ username }}</li>
+                        {% endif %}
+                        {% if not username %}
+                        <li class="active"><a href="{% url 'tipsLogin' %}">[登录]</a>
+                        </li>
+                        <li>
+                            <a href="{% url 'tipsSign' %}">[注册]</a>
+                        </li>
+                        {% endif %}
+                    </ul>
+                </div>
+            </div>
+        </header>
+    </header>
+    <div>
+        <form action="{% url 'tips' %}" method="post">
+            <div id="menu" style="background-color:#FFD700;height:200px;width:100px;float:left;">
+                <b>原来</b><br>
+                想把<br>
+                文本框<br>
+                放在这里的
+                {% if username %}
+                <input style="display:none"   type="text"  value={{username}} name="username" >
+                {% endif %}
+                
+                <input type="submit" value="打赏~">
+            </div>
+            <div id="content" style="background-color:#EEEEEE;height:200px;width:400px;float:left;">
+                但他出现在了这里
+            </div>
+            金额 <input type="number" min="1" max="50" value="1" name="amount">元<br>
+            <div style="color: red">
+                {{ msg }}
+            </div>
+            {% csrf_token %}
+        </form>
+        <div id="footer" style="background-color:#FFA500;clear:both;text-align:center;">
+            懒得做前端的Ming</div>
+    </div>
+</body>
+
+</html>

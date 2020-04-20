@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>try</title>
+    <script src="../static/universeLogin/myjs.js"></script>
+</head>
+
+<body>
+    {% if username %}
+    <li>欢迎您的登录,亲爱的{{ username }}</li>
+    <form method="POST" action="{% url 'universe' %}">
+        <input type="hidden" name="Qserv" value="">
+        <li><button href="{% url 'formLogin' %}" type="submit" value="" onclick="myForm();">评论区登录</button></li>
+        <li><button href="{% url 'tips' %}" type="submit" value="" onclick="myTips();">打赏处登录</button></li>
+        <li><button href="{{% url 'blog' %}" value="">博客</button></li>
+        {% csrf_token %}
+    </form>
+    {% endif %}
+    {% if not username %}
+    <li class="active"><a href="{% url 'universeLogin' %}">[登录]</a>
+    </li>
+    <li>
+        <a href="{% url 'universeSign' %}">[注册]</a>
+    </li>
+    {% endif %}
+    {% if not username %}
+    <li>您是否忘了登录?</li>
+    {% endif %}
+</body>
+
+
+</html>

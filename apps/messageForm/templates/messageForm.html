@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+    <link rel="stylesheet" href="/static/css/formstyle.css">
+</head>
+
+<body>
+    <form action="/messageForm/" method="post" class="smart-green" onsubmit="return checkLength()">
+        <header>
+            <div class="c-box fff-box">
+                <div class="wp header-box">
+                    <p class="fl hd-form">
+                        <h1 style="center">
+                            请留下你的信息.
+                            {% if username %}
+                            欢迎您的登录,亲爱的{{ username }}
+                            {% endif %}
+                            {% if not username %}
+                            <ul>
+                                <li><a href="{% url 'formLogin' %}">[登录]</a></li>
+                                <li><a href="{% url 'formSign' %}">[注册]</a></li>
+                            </ul>
+                            {% endif %}
+                        </h1>
+                    </p>
+                </div>
+            </div>
+        </header>
+        <h1>留言信息
+        </h1>
+        <label>
+            <span>姓名 :</span>
+            <input id="name" maxlength="40" type="text" name="name" value="{{ message.name }}" class="error" placeholder="请输入您的姓名" />
+            <div class="error-msg"></div>
+        </label>
+        <label>
+            <span>邮箱 :</span>
+            <input id="email" maxlength="200" type="email" value="" name="email" value="{{ message.email }}" placeholder="请输入邮箱地址" />
+            <div class="error-msg"></div>
+        </label>
+        <label>
+            <span>联系地址 :</span>
+            <input id="address"  maxlength="90" type="text" value="" name="address" value="{{ message.address }}" placeholder="请输入联系地址" />
+            <div class="error-msg"></div>
+        </label>
+        <label>
+            <span>留言 :</span>
+            <textarea id="message" maxlength="200" name="message" value="{{ message.message }}" placeholder="请输入你的建议"></textarea>
+            <div class="error-msg"></div>
+        </label>
+        <div class="success-msg"></div>
+        <label>
+            <span>&nbsp;</span>
+            <input type="submit" class="button" value="提交"  />
+        </label>
+        <input style="display:none"   type="text"  value={{username}} name="username" >
+        {% csrf_token %}
+    </form>
+</body>
+<script type="text/javascript">
+    function checkLength(){
+        var t1 = document.getElementById('name').value;
+        var t2 = document.getElementById('email').value;
+        var t3 = document.getElementById('address').value;
+        var t4 = document.getElementById('message').value;
+        if(t1.length==0) {
+            alert("请输入您的姓名");
+            return false;
+        }
+        if(t2.length==0) {
+            alert("请输入您的邮箱");
+            return false;
+        }
+        if(t3.length==0) {
+            alert("请输入您的地址");
+            return false;
+        }
+        if(t4.length==0) {
+            alert("请输入您的留言内容");
+            return false;
+        }
+        return true;
+    }
+</script>
+</html>

@@ -1,0 +1,161 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- meta data -->
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <!--font-family-->
+    <link href="https://fonts.googleapis.com/css?family=Poppins:100,200,300,400,500,600,700,800,900&amp;subset=devanagari,latin-ext" rel="stylesheet">
+    <!-- title of site -->
+    <title>统一登录</title>
+    <!-- For favicon png -->
+    <link rel="shortcut icon" type="image/icon" href="../static/universeLogin/assets/logo/favicon.png" />
+    <!--font-awesome.min.css-->
+    <link rel="stylesheet" href="../static/universeLogin/assets/css/font-awesome.min.css">
+    <!--animate.css-->
+    <link rel="stylesheet" href="../static/universeLogin/assets/css/animate.css">
+    <!--bootstrap.min.css-->
+    <link rel="stylesheet" href="../static/universeLogin/assets/css/bootstrap.min.css">
+    <!-- bootsnav -->
+    <link rel="stylesheet" href="../static/universeLogin/assets/css/bootsnav.css">
+    <!--style.css-->
+    <link rel="stylesheet" href="../static/universeLogin/assets/css/style.css">
+    <!--responsive.css-->
+    <link rel="stylesheet" href="../static/universeLogin/assets/css/responsive.css">
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+			<script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+			<script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+        <![endif]-->
+</head>
+
+<body>
+    <!--[if lte IE 9]>
+            <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="https://browsehappy.com/">upgrade your browser</a> to improve your experience and security.</p>
+        <![endif]-->
+    <!-- signin end -->
+    <section class="signin popup-in">
+        <div class="container">
+            <div class="sign-content popup-in-content">
+                <div class="popup-in-txt">
+                    <h2>统一登录</h2>
+                    <!-- <form method="post" autocomplete="off" id="form1">
+                        <input name="username" id="account_l" type="text" placeholder="手机号/邮箱" />
+                </div>
+                <div>
+                    <input name="password" id="password_l" type="password" placeholder="请输入您的密码" />
+                </div>
+                <input class="btn btn-green" id="jsLoginBtn" type="submit" value="立即登录 > " />
+                {% csrf_token %}
+                </form> -->
+                    <div class="row">
+                        <div class="col-sm-12">
+                            <div class="signin-form">
+                                <form method="post" action="{% url 'universeLogin' %}" autocomplete="off" onsubmit="return checkLength()">
+                                    <div class="form-group">
+                                        <label for="signin_form">用户名</label>
+                                        <input type="usename" name="username" class="form-control" id="signin_form" placeholder="请输入用户名">
+                                    </div>
+                                    <!--/.form-group -->
+                                    <div class="form-group">
+                                        <label for="signin_form">密码</label>
+                                        <input type="password" name="psw" class="form-control" id="signin_form" placeholder="请输入密码">
+                                    </div>
+                                    <!--/.row -->
+                                    <div class="row">
+                                        <div class="col-sm-12">
+                                            <div class="signin-password">
+                                                <div class="password-circle">
+                                                    <div class="single-forgot-password-circle text-right
+										">
+                                                        <div style="color: red">
+                                                            {{ msg }}
+                                                        </div>
+                                                        <a href="{% url 'universeSign' %}">忘了密码?</a>
+                                                    </div>
+                                                    <!--/.single-password-circle-->
+                                                </div>
+                                                <!--/.password-circle-->
+                                            </div>
+                                            <!--/.signin-password -->
+                                        </div>
+                                        <!--/.col -->
+                                        <!-- /.row -->
+                                        <div class="row">
+                                            <div class="col-sm-12">
+                                                <div class="signin-footer">
+                                                    <button type="submit" class="btn signin_btn signin_btn_two" data-toggle="modal" data-target=".signin_modal">
+                                                        登录
+                                                    </button>
+                                                    <p align="center">
+                                                        还没创建账户 ?
+                                                        <a href="{% url 'universeSign' %}">加入我们</a>
+                                                    </p>
+                                                </div>
+                                                <!--/.signin-footer -->
+                                            </div>
+                                            <!--/.col -->
+                                        </div>
+                                        <!-- /.row  -->
+                                        {% csrf_token %}
+                                        <!--/.form-group -->
+                                </form>
+                                <!--/form -->
+                            </div>
+                            <!--/.signin-form -->
+                        </div>
+                        <!--/.col -->
+                    </div>
+                </div><!-- .popup-in-txt -->
+            </div>
+            <!--/.sign-content -->
+        </div>
+        <!--/.container -->
+    </section>
+    <!--/.signin -->
+    <!-- signin end -->
+    <!--footer copyright start -->
+    <footer class="footer-copyright">
+        <div id="scroll-Top">
+            <i class="fa fa-angle-double-up return-to-top" id="scroll-top" data-toggle="tooltip" data-placement="top" title="" data-original-title="Back to Top" aria-hidden="true"></i>
+        </div>
+        <!--/.scroll-Top-->
+    </footer>
+    <!--/.hm-footer-copyright-->
+    <!--footer copyright  end -->
+    <!-- Include all js compiled plugins (below), or include individual files as needed -->
+    <script src="../static/universeLogin/assets/js/jquery.js"></script>
+    <!--modernizr.min.js-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.3/modernizr.min.js"></script>
+    <!--bootstrap.min.js-->
+    <script src="../static/universeLogin/assets/js/bootstrap.min.js"></script>
+    <!-- bootsnav js -->
+    <script src="../static/universeLogin/assets/js/bootsnav.js"></script>
+    <!-- jquery.sticky.js -->
+    <script src="../static/universeLogin/assets/js/jquery.sticky.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.4.1/jquery.easing.min.js"></script>
+    <!--Custom JS-->
+    <script src="../static/universeLogin/assets/js/custom.js"></script>
+    {% csrf_token %}
+</body>
+<script type="text/javascript">
+function checkLength() {
+    var t1 = document.getElementsByName('username')[0].value;
+    var t2 = document.getElementsByName('psw')[0].value;
+    if (t1.length == 0) {
+        alert("请输入您的用户名");
+        return false;
+    }
+    if (t2.length == 0) {
+        alert("请输入您的密码");
+        return false;
+    }
+    return true;
+}
+</script>
+
+</html>
