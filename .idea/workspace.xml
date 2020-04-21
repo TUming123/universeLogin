@@ -3,7 +3,13 @@
   <component name="ChangeListManager">
     <list default="true" id="6c8236a3-8046-4165-bc60-543aa185cdea" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/apps/universe/templates/createUnion.html" beforeDir="false" afterPath="$PROJECT_DIR$/apps/universe/templates/createUnion.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/apps/universe/templates/universe.html" beforeDir="false" afterPath="$PROJECT_DIR$/apps/universe/templates/universe.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/db.sqlite3" beforeDir="false" afterPath="$PROJECT_DIR$/db.sqlite3" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/message/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/message/settings.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/blog.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/login.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/universeLogin.html" beforeDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -115,7 +121,7 @@
       <updated>1586774425902</updated>
       <workItem from="1586774427013" duration="8531000" />
       <workItem from="1586847216920" duration="55825000" />
-      <workItem from="1587214523789" duration="70967000" />
+      <workItem from="1587214523789" duration="72613000" />
     </task>
     <servers />
   </component>
@@ -155,6 +161,11 @@
           <url>file://$PROJECT_DIR$/apps/universe/views.py</url>
           <line>19</line>
           <option name="timeStamp" value="60" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/apps/universe/views.py</url>
+          <line>99</line>
+          <option name="timeStamp" value="61" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
