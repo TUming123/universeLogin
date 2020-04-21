@@ -2,12 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="6c8236a3-8046-4165-bc60-543aa185cdea" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/apps/universe/templates/universe.html" beforeDir="false" afterPath="$PROJECT_DIR$/apps/universe/templates/universe.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/apps/universe/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/apps/universe/views.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/db.sqlite3" beforeDir="false" afterPath="$PROJECT_DIR$/db.sqlite3" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/message/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/message/urls.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/message/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/message/settings.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -119,7 +115,7 @@
       <updated>1586774425902</updated>
       <workItem from="1586774427013" duration="8531000" />
       <workItem from="1586847216920" duration="55825000" />
-      <workItem from="1587214523789" duration="66533000" />
+      <workItem from="1587214523789" duration="70967000" />
     </task>
     <servers />
   </component>
