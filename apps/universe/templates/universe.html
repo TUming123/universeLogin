@@ -14,6 +14,7 @@
         <li><button href="{% url 'formLogin' %}" type="submit" value="" onclick="myForm();">评论区登录</button></li>
         <li><button href="{% url 'tips' %}" type="submit" value="" onclick="myTips();">打赏处登录</button></li>
         <li><button href="{{% url 'blog' %}" value="">博客</button></li>
+        <li><a href="{% url 'createUnion' %}">需要绑定用户?</a></li>
         {% csrf_token %}
     </form>
     {% endif %}

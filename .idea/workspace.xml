@@ -1,7 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="6c8236a3-8046-4165-bc60-543aa185cdea" name="Default Changelist" comment="" />
+    <list default="true" id="6c8236a3-8046-4165-bc60-543aa185cdea" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/apps/universe/templates/universe.html" beforeDir="false" afterPath="$PROJECT_DIR$/apps/universe/templates/universe.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/apps/universe/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/apps/universe/views.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/db.sqlite3" beforeDir="false" afterPath="$PROJECT_DIR$/db.sqlite3" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/message/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/message/urls.py" afterDir="false" />
+    </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -33,8 +40,13 @@
       </list>
     </option>
   </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
   <component name="ProjectId" id="1aTzZKClFqqzI7Lr4rDCcrLML1C" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="PropertiesComponent">
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/templates" />
     <property name="list.type.of.created.stylesheet" value="CSS" />
@@ -107,12 +119,23 @@
       <updated>1586774425902</updated>
       <workItem from="1586774427013" duration="8531000" />
       <workItem from="1586847216920" duration="55825000" />
-      <workItem from="1587214523789" duration="57589000" />
+      <workItem from="1587214523789" duration="66533000" />
     </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -133,14 +156,9 @@
           <option name="timeStamp" value="25" />
         </line-breakpoint>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
-          <url>file://$PROJECT_DIR$/apps/messageForm/views.py</url>
-          <line>61</line>
-          <option name="timeStamp" value="29" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
-          <url>file://$PROJECT_DIR$/apps/serv/views.py</url>
-          <line>22</line>
-          <option name="timeStamp" value="59" />
+          <url>file://$PROJECT_DIR$/apps/universe/views.py</url>
+          <line>19</line>
+          <option name="timeStamp" value="60" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
@@ -149,6 +167,8 @@
         <watch expression="len(self.ksess1)" language="Python" />
         <watch expression="formuser[0]" language="Python" />
         <watch expression="request.session['username'])" language="Python" />
+        <watch expression="userTemp[0]" language="Python" />
+        <watch expression="user2[0].ID" />
       </configuration>
     </watches-manager>
   </component>

@@ -29,6 +29,7 @@ from apps.universe.views import universe, universeLogin, universeSign, universeL
 from apps.auth.views import auth
 from apps.grant.views import grant
 from apps.serv.views import serv
+from apps.universe.views import createUnion
 
 urlpatterns = [
     # path('admin/', admin.site.urls),
@@ -53,5 +54,7 @@ urlpatterns = [
     path('auth/', auth, name="auth"),
     path('grant/', grant, name="grant"),
     path('serv/', serv, name="serv"),
+
+    path('createUnion/', createUnion, name="createUnion"),
 
 ]
