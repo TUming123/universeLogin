@@ -31,8 +31,10 @@ from apps.grant.views import grant
 from apps.serv.views import serv
 from apps.universe.views import createUnion
 
+
 urlpatterns = [
     # path('admin/', admin.site.urls),
+
     path('xadmin/', xadmin.site.urls),
 
     path('messageForm/', messageForm, name="messageForm"),

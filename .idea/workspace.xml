@@ -2,14 +2,27 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="6c8236a3-8046-4165-bc60-543aa185cdea" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/lib/dosomething.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib/myLog.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/log/critical.log" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/log/default.log" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/log/error.log" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/log/message.log" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/log/warning.log" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/templates/blog.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/apps/universe/templates/createUnion.html" beforeDir="false" afterPath="$PROJECT_DIR$/apps/universe/templates/createUnion.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/apps/universe/templates/universe.html" beforeDir="false" afterPath="$PROJECT_DIR$/apps/universe/templates/universe.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/apps/auth/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/apps/auth/views.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/apps/blog/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/apps/blog/views.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/apps/grant/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/apps/grant/views.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/apps/messageForm/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/apps/messageForm/views.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/apps/serv/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/apps/serv/views.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/apps/tips/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/apps/tips/views.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/apps/universe/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/apps/universe/views.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/db.sqlite3" beforeDir="false" afterPath="$PROJECT_DIR$/db.sqlite3" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/manage.py" beforeDir="false" afterPath="$PROJECT_DIR$/manage.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/message/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/message/settings.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/blog.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/login.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/universeLogin.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/message/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/message/urls.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/requirements.txt" beforeDir="false" afterPath="$PROJECT_DIR$/requirements.txt" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -46,7 +59,9 @@
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="ProjectId" id="1aTzZKClFqqzI7Lr4rDCcrLML1C" />
-  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
   <component name="PropertiesComponent">
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
@@ -56,19 +71,19 @@
     <property name="settings.editor.selected.configurable" value="preferences.keymap" />
   </component>
   <component name="RecentsManager">
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="D:\360data\重要数据\桌面\桌面\学习\杂七杂八的学习\大三下\信息系统安全\project\1统一身份认证\message\templates" />
-      <recent name="D:\360data\重要数据\桌面\桌面\学习\杂七杂八的学习\大三下\信息系统安全\project\1统一身份认证\message\apps\tips\migrations" />
-      <recent name="D:\360data\重要数据\桌面\桌面\学习\杂七杂八的学习\大三下\信息系统安全\project\1统一身份认证\message\apps\tips\static\css" />
-      <recent name="D:\360data\重要数据\桌面\桌面\学习\杂七杂八的学习\大三下\信息系统安全\project\1统一身份认证\message\apps\universe" />
-      <recent name="D:\360data\重要数据\桌面\桌面\学习\杂七杂八的学习\大三下\信息系统安全\project\1统一身份认证\message\apps\tips" />
-    </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="D:\360data\重要数据\桌面\桌面\学习\杂七杂八的学习\大三下\信息系统安全\project\1统一身份认证\message\lib" />
       <recent name="D:\360data\重要数据\桌面\桌面\学习\杂七杂八的学习\大三下\信息系统安全\project\1统一身份认证\message\apps" />
       <recent name="D:\360data\重要数据\桌面\桌面\学习\杂七杂八的学习\大三下\信息系统安全\project\1统一身份认证\message\apps\universe\templates" />
       <recent name="D:\360data\重要数据\桌面\桌面\学习\杂七杂八的学习\大三下\信息系统安全\project\1统一身份认证\message\apps\tips\templates" />
       <recent name="D:\360data\重要数据\桌面\桌面\学习\杂七杂八的学习\大三下\信息系统安全\project\1统一身份认证\message" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\360data\重要数据\桌面\桌面\学习\杂七杂八的学习\大三下\信息系统安全\project\1统一身份认证\message\templates" />
+      <recent name="D:\360data\重要数据\桌面\桌面\学习\杂七杂八的学习\大三下\信息系统安全\project\1统一身份认证\message\apps\tips\migrations" />
+      <recent name="D:\360data\重要数据\桌面\桌面\学习\杂七杂八的学习\大三下\信息系统安全\project\1统一身份认证\message\apps\tips\static\css" />
+      <recent name="D:\360data\重要数据\桌面\桌面\学习\杂七杂八的学习\大三下\信息系统安全\project\1统一身份认证\message\apps\universe" />
+      <recent name="D:\360data\重要数据\桌面\桌面\学习\杂七杂八的学习\大三下\信息系统安全\project\1统一身份认证\message\apps\tips" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -121,7 +136,8 @@
       <updated>1586774425902</updated>
       <workItem from="1586774427013" duration="8531000" />
       <workItem from="1586847216920" duration="55825000" />
-      <workItem from="1587214523789" duration="72613000" />
+      <workItem from="1587214523789" duration="77478000" />
+      <workItem from="1587523932532" duration="22163000" />
     </task>
     <servers />
   </component>
@@ -133,7 +149,9 @@
       <map>
         <entry key="MAIN">
           <value>
-            <State />
+            <State>
+              <option name="COLUMN_ORDER" />
+            </State>
           </value>
         </entry>
       </map>
@@ -143,29 +161,34 @@
     <breakpoint-manager>
       <breakpoints>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
-          <url>file://$PROJECT_DIR$/apps/messageForm/views.py</url>
-          <line>82</line>
-          <option name="timeStamp" value="6" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
           <url>file://$PROJECT_DIR$/apps/tips/views.py</url>
-          <line>130</line>
+          <line>165</line>
           <option name="timeStamp" value="10" />
         </line-breakpoint>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
           <url>file://$PROJECT_DIR$/apps/tips/views.py</url>
-          <line>94</line>
+          <line>119</line>
           <option name="timeStamp" value="25" />
         </line-breakpoint>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
           <url>file://$PROJECT_DIR$/apps/universe/views.py</url>
-          <line>19</line>
+          <line>26</line>
           <option name="timeStamp" value="60" />
         </line-breakpoint>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
           <url>file://$PROJECT_DIR$/apps/universe/views.py</url>
-          <line>99</line>
+          <line>123</line>
           <option name="timeStamp" value="61" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/apps/messageForm/views.py</url>
+          <line>83</line>
+          <option name="timeStamp" value="62" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/apps/universe/views.py</url>
+          <line>238</line>
+          <option name="timeStamp" value="65" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
@@ -176,6 +199,7 @@
         <watch expression="request.session['username'])" language="Python" />
         <watch expression="userTemp[0]" language="Python" />
         <watch expression="user2[0].ID" />
+        <watch expression="request.META" />
       </configuration>
     </watches-manager>
   </component>

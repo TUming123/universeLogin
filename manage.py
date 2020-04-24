@@ -2,6 +2,10 @@
 """Django's command-line utility for administrative tasks."""
 import os
 import sys
+from lib.myLog import myLog
+
+
+log = myLog()
 
 
 def main():
@@ -18,4 +22,4 @@ def main():
 
 
 if __name__ == '__main__':
-    main()
+        main()

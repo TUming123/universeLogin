@@ -129,3 +129,138 @@ STATIC_URL = '/static/'
 STATICFILES_DIRS = [
     os.path.join(BASE_DIR, 'static'),
 ]
+
+# 创建日志的路径
+LOG_PATH = os.path.join(BASE_DIR, 'log')
+# 如果地址不存在，则自动创建log文件夹
+if not os.path.join(LOG_PATH):
+    os.mkdir(LOG_PATH)
+
+LOGGING = {
+    'version': 1,
+    'disable_existing_loggers': False,#此选项开启表示禁用部分日志，不建议设置为True
+    'formatters': {
+        'verbose': {
+            'format': '%(levelname)s %(asctime)s %(module)s %(process)d %(thread)d %(message)s'#日志格式
+        },
+        'standard': {
+            'format': '[%(asctime)s] [%(levelname)s] %(message)s'
+        },
+    },
+    # 'filters': {
+    #     'require_debug_true': {
+    #         '()': 'django.utils.log.RequireDebugTrue',#过滤器，只有当setting的DEBUG = True时生效
+    #     },
+    # },
+    'handlers': {
+        'console': {
+            'level': 'DEBUG',
+            # 'filters': ['require_debug_true'],
+            'class': 'logging.StreamHandler',
+            'formatter': 'verbose',
+            'stream': 'ext://sys.stdout',
+
+        },
+        'file': {#重点配置部分
+            'level': 'DEBUG',
+            'class': 'logging.FileHandler',
+            'filename': LOG_PATH+'/message.log',#日志保存文件
+            'formatter': 'verbose',
+            
+        },
+        'default': {
+            'level':'DEBUG',
+            'class':'logging.handlers.RotatingFileHandler',
+            
+            'filename': LOG_PATH+'/default.log',     #日志输出文件
+            'maxBytes': 1024*1024*5,                  #文件大小
+            'backupCount': 5,                         #备份份数
+            'formatter':'standard',                   #使用哪种formatters日志格式
+        },
+        'warning': {
+            'level': 'WARNING',
+            'class': 'logging.handlers.RotatingFileHandler',
+            
+            'filename': LOG_PATH+'/warning.log',
+            'maxBytes': 1024*1024*5,                  #文件大小
+            'backupCount': 5,
+            'formatter': 'verbose'
+        },
+        'error': {
+            'level': 'ERROR',
+            'class': 'logging.handlers.RotatingFileHandler',
+            'maxBytes': 1024*1024*5,                  #文件大小
+            'backupCount': 5,
+            'filename': LOG_PATH+'/error.log',
+            'formatter': 'verbose'
+        },
+        'critical': {
+            'level': 'CRITICAL',
+            'class': 'logging.handlers.RotatingFileHandler',
+            'maxBytes': 1024*1024*5,                  #文件大小
+            'backupCount': 5,
+            'filename': LOG_PATH+'/critical.log',
+            'formatter': 'verbose'
+        },
+        'request_handler': {
+            'level':'DEBUG',
+            'class':'logging.handlers.RotatingFileHandler',
+            'filename': LOG_PATH+'/script.log',
+            'maxBytes': 1024*1024*5,
+            'backupCount': 5,
+            'formatter':'standard',
+        },
+        'scprits_handler': {
+            'level':'DEBUG',
+            'class':'logging.handlers.RotatingFileHandler',
+            'filename':LOG_PATH+'/script.log',
+            'maxBytes': 1024*1024*5,
+            'backupCount': 5,
+            'formatter':'standard',
+        }
+    },
+    'loggers': {
+        'formLogin': {
+            'handlers': ['request_handler', 'file'],
+            'level': 'DEBUG',
+            'filemode': 'a',
+            'propagate': True,
+        },
+        'tipsLogin': {
+            'handlers': ['request_handler', 'file'],
+            'level': 'DEBUG',
+            'filemode': 'a',
+            'propagate': True,
+        },
+        'universeLogin': {
+            'handlers': ['request_handler', 'file'],
+            'level': 'DEBUG',
+            'filemode': 'a',
+            'propagate': True,
+        },
+        'info': {
+            'handlers': ['default'],
+            'level': 'INFO',
+            'filemode': 'a',
+            'propagate': True,
+        },
+        'warning': {
+            'handlers': ['warning'],
+            'level': 'WARNING',
+            'filemode': 'a',
+            'propagate': True,
+        },
+        'error': {
+            'handlers': ['error'],
+            'level': 'ERROR',
+            'filemode': 'a',
+            'propagate': True,
+        },
+        'critical': {
+            'handlers': ['critical'],
+            'level': 'CRITICAL',
+            'filemode': 'a',
+            'propagate': True,
+        },
+    },
+}

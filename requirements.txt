@@ -1,1 +1,4 @@
 django == 3.0
+six
+future
+sqlite == 3.8.3
