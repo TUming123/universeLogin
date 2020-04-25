@@ -2,27 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="6c8236a3-8046-4165-bc60-543aa185cdea" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/lib/dosomething.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lib/myLog.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/log/critical.log" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/log/default.log" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/log/error.log" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/log/message.log" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/log/warning.log" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/blog.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/apps/auth/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/apps/auth/views.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/apps/blog/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/apps/blog/views.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/apps/grant/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/apps/grant/views.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/apps/messageForm/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/apps/messageForm/views.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/apps/serv/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/apps/serv/views.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/apps/tips/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/apps/tips/views.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/apps/universe/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/apps/universe/views.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/db.sqlite3" beforeDir="false" afterPath="$PROJECT_DIR$/db.sqlite3" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/manage.py" beforeDir="false" afterPath="$PROJECT_DIR$/manage.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/log/critical.log" beforeDir="false" afterPath="$PROJECT_DIR$/log/critical.log" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/message/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/message/settings.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/message/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/message/urls.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/requirements.txt" beforeDir="false" afterPath="$PROJECT_DIR$/requirements.txt" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -107,7 +90,7 @@
         <env name="PYTHONUNBUFFERED" value="1" />
         <env name="DJANGO_SETTINGS_MODULE" value="message.settings" />
       </envs>
-      <option name="SDK_HOME" value="" />
+      <option name="SDK_HOME" value="F:\anaconda\envs\keras\python.exe" />
       <option name="WORKING_DIRECTORY" value="" />
       <option name="IS_MODULE_SDK" value="false" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
@@ -115,7 +98,7 @@
       <option name="launchJavascriptDebuger" value="false" />
       <option name="port" value="8000" />
       <option name="host" value="" />
-      <option name="additionalOptions" value="" />
+      <option name="additionalOptions" value="--noreload" />
       <option name="browserUrl" value="" />
       <option name="runTestServer" value="false" />
       <option name="runNoReload" value="false" />
@@ -137,7 +120,7 @@
       <workItem from="1586774427013" duration="8531000" />
       <workItem from="1586847216920" duration="55825000" />
       <workItem from="1587214523789" duration="77478000" />
-      <workItem from="1587523932532" duration="22163000" />
+      <workItem from="1587523932532" duration="24757000" />
     </task>
     <servers />
   </component>
@@ -176,19 +159,9 @@
           <option name="timeStamp" value="60" />
         </line-breakpoint>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
-          <url>file://$PROJECT_DIR$/apps/universe/views.py</url>
-          <line>123</line>
-          <option name="timeStamp" value="61" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
           <url>file://$PROJECT_DIR$/apps/messageForm/views.py</url>
           <line>83</line>
           <option name="timeStamp" value="62" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
-          <url>file://$PROJECT_DIR$/apps/universe/views.py</url>
-          <line>238</line>
-          <option name="timeStamp" value="65" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>

@@ -124,6 +124,7 @@ def createUnion(request):
 
 def universe(request):
     try:
+
         if request.method == 'POST':
             if 'auth2client' in request.session:
                 del request.session['auth2client']
@@ -195,6 +196,7 @@ def universe(request):
 
 
 def universeLogin(request):
+
     try:
         return render(request, "universeSignIn.html")
     except Exception as e:
@@ -236,7 +238,7 @@ def universeSign(request):
 class universeLoginView(View):
 
     def get(self, request, *args, **kwargs):
-        log.runtime("", "", log.getIp(request))
+        # log.system("","","try")
         return render(request, "universeSignIn.html")
 
     def post(self, request, *args, **kwargs):

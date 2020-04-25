@@ -197,7 +197,7 @@ LOGGING = {
         'critical': {
             'level': 'CRITICAL',
             'class': 'logging.handlers.RotatingFileHandler',
-            'maxBytes': 1024*1024*5,                  #文件大小
+            'maxBytes': 15,                  #文件大小
             'backupCount': 5,
             'filename': LOG_PATH+'/critical.log',
             'formatter': 'verbose'
